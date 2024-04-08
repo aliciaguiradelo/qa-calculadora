@@ -1,0 +1,61 @@
+package calculadora;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class CalculadoraTest {
+	
+	private Calculadora calc;
+	
+	@BeforeEach
+	public void inicialisar() {
+		this.calc = new Calculadora();
+	}
+	
+	
+	@Test
+	public void testSomar() {
+		
+		//Calculadora calc = new Calculadora();
+		
+		int valor1 = 2;
+		int valor2 = 3;
+		int resultado = calc.somar(valor1,valor2);
+		assertEquals(valor1 + valor2, resultado);
+	}
+
+	@Test
+	public void testSubtrair() {
+		
+		//Calculadora calc = new Calculadora();
+		
+		int valor1 = 10;
+		int valor2 = 5;
+		int resultado = calc.subtrair(valor1,valor2);
+		assertEquals(valor1 - valor2, resultado);
+	}
+
+	@Test
+	public void testMultiplicar() {
+		
+		//Calculadora calc = new Calculadora();
+		
+		int valor1 = 2;
+		int valor2 = 3;
+		int resultado = calc.multiplicar(valor1,valor2);
+		assertEquals(valor1 * valor2, resultado);
+	}
+
+	@Test
+	public void testDividir() {
+		
+		//Calculadora calc = new Calculadora();
+		
+		int valor1 = 5;
+		int valor2 = 0;
+		int resultado = calc.dividir(valor1,valor2);
+		assertEquals(valor1 / valor2, resultado);
+	}
+
+}

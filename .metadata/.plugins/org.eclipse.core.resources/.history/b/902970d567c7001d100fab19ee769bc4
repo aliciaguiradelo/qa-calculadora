@@ -1,0 +1,28 @@
+package calculadora;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class AssertTest {
+
+	@Test
+	public void testAssertArrayEquals() {
+		//compara arrays
+		byte[] esperado = "teste".getBytes();
+		byte[] atual = "testes".getBytes();
+		assertArrayEquals(esperado, atual);
+	}
+	
+	//validar strings
+	@Test
+	public void testAssertEquals() {
+		
+		assertEquals("text", "text");
+	}
+	
+	//validar booleano 
+	public 
+	
+}
